@@ -437,23 +437,25 @@
     </div>
 </div>
 
+
 <!-- Booking Section -->
 <div class="booking-section">
     <h2>Hi there, where would you like to go today?</h2>
-    <div class="booking-form">
-        <input type="text" placeholder="From">
-        <input type="text" placeholder="To">
-        <input type="date" placeholder="Departure">
-        <input type="date" placeholder="Return">
-        <select>
-            <option>1 Passenger</option>
-            <option>2 Passengers</option>
-            <option>3 Passengers</option>
-        </select>
-        <button>Search</button>
-    </div>
+    <form action="https://formspree.io/f/xjkyyobb" method="POST">
+        <div class="booking-form">
+            <input type="text" name="from" placeholder="From" required>
+            <input type="text" name="to" placeholder="To" required>
+            <input type="date" name="departure" placeholder="Departure" required>
+            <input type="date" name="return" placeholder="Return">
+            <select name="passengers" required>
+                <option value="1">1 Passenger</option>
+                <option value="2">2 Passengers</option>
+                <option value="3">3 Passengers</option>
+            </select>
+            <button type="submit">Search</button>
+        </div>
+    </form>
 </div>
-
 <!-- Available Flights Section -->
 <div class="available-flights" id="flights">
     <h2>Available Flights</h2>
@@ -559,13 +561,16 @@
 </div>
 
 <!-- Newsletter Section -->
+<!-- Newsletter Section -->
 <div class="newsletter">
     <h2>Subscribe to Our Newsletter</h2>
     <p>Get the latest updates on offers and travel deals.</p>
-    <div class="newsletter-form">
-        <input type="email" placeholder="Enter your email">
-        <button>Subscribe</button>
-    </div>
+    <form action="https://formspree.io/f/xjkyyobb" method="POST">
+        <div class="newsletter-form">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </div>
+    </form>
 </div>
 
 <!-- Footer -->
